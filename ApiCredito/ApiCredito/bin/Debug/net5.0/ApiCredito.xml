@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiCredito</name>
+    </assembly>
+    <members>
+        <member name="M:ApiCredito.Controllers.CreditosController.Get">
+            <summary>
+            Seleciona todos os Créditos.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCredito.Controllers.CreditosController.Get(System.Int32)">
+            <summary>
+            Seleciona um Crédito específico.
+            </summary>
+            <param name="creditoID">ID do crédito no qual será selecionado.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCredito.Controllers.CreditosController.Post(ApiCredito.Modelos.Credito)">
+            <summary>
+            Liberação do Crédito.
+            </summary>
+            <param name="credito">Crédito no qual será concebido.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCredito.Controllers.CreditosController.Validacao(ApiCredito.Modelos.Credito)">
+            <summary>
+            Validar as regras necessárias para conceber o crédito ao usuário.
+            </summary>
+            <param name="credito">A entidade do Crédito.</param>
+        </member>
+        <member name="M:ApiCredito.Controllers.CreditosController.Put(System.Int32,ApiCredito.Modelos.Credito)">
+            <summary>
+            Altera as informações contidas no Crédito
+            </summary>
+            <param name="id">ID do crédito que se deseja alterar.</param>
+            <param name="credito">Entidade do Crédito.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiCredito.Controllers.CreditosController.Delete(System.Int32)">
+            <summary>
+            Exclui um Crédito específico.
+            </summary>
+            <param name="creditoID">ID do Crédito.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ApiCredito.Modelos.Credito.ID">
+            <summary>
+            ID do Crédito.
+            </summary>
+        </member>
+        <member name="P:ApiCredito.Modelos.Credito.ValorDoCredito">
+            <summary>
+            Valor do Crédito que se deseja liberar.
+            </summary>
+        </member>
+        <member name="P:ApiCredito.Modelos.Credito.TipoDeCredito">
+            <summary>
+            Tipo de Crédito.
+            </summary>
+        </member>
+        <member name="P:ApiCredito.Modelos.Credito.QuantidadeDeParcelas">
+            <summary>
+            Quantidade de Parcela para o pagamento do crédito concebido.
+            </summary>
+        </member>
+        <member name="P:ApiCredito.Modelos.Credito.DataDeVencimento">
+            <summary>
+            Data de vencimento do primeiro pagamento.
+            </summary>
+        </member>
+    </members>
+</doc>
